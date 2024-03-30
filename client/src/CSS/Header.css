@@ -1,0 +1,96 @@
+/* Header.css */
+
+header {
+    background-color: #8F6E5D; /* Couleur du logo */
+    color: #fff;
+    padding: 1px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pour séparer le logo et le menu */
+    border-radius: 8px; /* Arrondir les bords du header */
+    position: fixed; /* Position fixe pour le header */
+    top: 0; /* Aligner le header en haut de la fenêtre */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-left: 4%;
+    margin-right:4%;
+    height: 60px;/* Assurer que le header reste au-dessus du contenu */
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo {
+    max-width: 60px; /* Réduire la taille du logo */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 30px; /* Réduire le padding du menu */
+    display: flex; /* Afficher les éléments du menu en ligne */
+  }
+  
+  nav ul li {
+    margin-right: 40px; /* Réduire l'espacement entre les éléments du menu */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px; /* Réduire la taille de la police */
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffd700; /* Couleur "fun" pour le survol */
+  }
+  
+  /* Menu responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none; /* Cacher le menu par défaut sur les petits écrans */
+      flex-direction: column; /* Afficher les éléments du menu en colonne */
+      position: fixed; /* Position fixe pour le menu */
+      top: 60px; /* Positionner le menu en dessous de l'en-tête */
+      left: 0;
+      background-color: #8F6E5D; /* Couleur du fond du menu */
+      width: 100%; /* Largeur pleine pour le menu */
+      padding: 5px 0; /* Ajouter un peu de padding au menu */
+      border-radius: 8px; /* Arrondir les bords du menu */
+      z-index: 999; /* Assurer que le menu reste au-dessus du contenu */
+    }
+  
+    nav ul li {
+      margin: 0; /* Réinitialiser les marges des éléments du menu */
+      padding: 80px 20px; /* Réduire le padding des éléments du menu */
+      text-align: center; /* Centrer le texte des éléments du menu */
+    }
+  
+    .menu-icon {
+      display: block; /* Afficher l'icône de menu sur les petits écrans */
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+      position: fixed; /* Position fixe pour l'icône de menu */
+      top: 15px; /* Positionner l'icône de menu en haut */
+      right: 20px;
+      z-index: 1000; /* Assurer que l'icône de menu reste au-dessus du contenu */
+    }
+  
+    .menu-icon:hover {
+      color: #ffd700; /* Couleur "fun" pour le survol */
+    }
+  
+    .menu-active nav ul {
+      display: flex; /* Afficher le menu lorsqu'il est activé */
+    }
+  }
+  

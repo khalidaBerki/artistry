@@ -1,0 +1,79 @@
+/* Style pour le conteneur principal */
+.artwork-container {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px; 
+    margin-top :20px;
+  }
+  
+h1 {
+    margin-top: 40px;
+}
+  /* Style pour l'image principale */
+  .artwork-image {
+    width: 100%; /* Image prend toute la largeur du conteneur */
+    max-height: 400px; /* Hauteur maximale de l'image */
+    object-fit: cover; /* Redimensionner l'image pour couvrir toute la zone, en conservant son ratio */
+    display: flex;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-bottom: 20px; /* Espacement en bas */
+  }
+  .containerDarck {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px; /* Arrondir les coins */
+        transition: box-shadow 0.3s ease; /* Ajouter une transition pour une animation douce */
+  }
+
+
+
+
+
+
+
+
+
+
+  
+  /* Style pour le titre de l'œuvre */
+  .artwork-title {
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    margin-bottom: 10px; /* Espacement en bas */
+  }
+  
+  /* Style pour le nom de l'artiste */
+  .artist-name {
+    font-style: italic; /* Italique */
+    color: #888; /* Couleur de texte grise */
+    margin-bottom: 10px; /* Espacement en bas */
+  }
+  
+  /* Style pour la description de l'œuvre */
+  .artwork-description {
+    margin-bottom: 20px; /* Espacement en bas */
+  }
+  
+  /* Style pour les suggestions d'autres œuvres */
+  .artwork-suggestions {
+    list-style-type: none; /* Pas de puces */
+    padding: 0; /* Pas de remplissage */
+  }
+  
+  /* Style pour chaque suggestion d'œuvre */
+  .suggested-artwork {
+    margin-bottom: 10px; /* Espacement en bas */
+  }
+  
+  /* Style pour l'image de la suggestion d'œuvre */
+  .suggested-artwork img {
+    width: 100px; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour conserver le ratio */
+    border-radius: 5px; /* Coins arrondis */
+    margin-right: 10px; /* Espacement à droite */
+  }
+  

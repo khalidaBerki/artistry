@@ -1,0 +1,22 @@
+/* ComingSoon.css */
+
+.coming-soon-wrapper {
+    margin: 0; /* Réinitialiser les marges du corps */
+    padding: 0; /* Réinitialiser les rembourrages du corps */
+    display: flex; /* Utiliser Flexbox pour centrer le contenu */
+    align-items: center; /* Centrer le contenu verticalement */
+    justify-content: center; /* Centrer le contenu horizontalement */
+    min-height: 100vh;
+    background-color: #DFD4C1;
+    background-image: 
+    linear-gradient(40deg, transparent 22px, white 22px, white 24px, transparent 24px);
+    background-size: 30px 30px; /* Définir une hauteur minimale pour le corps */
+  }
+  
+  .coming-soon-content {
+    padding: 20px;
+    background-color: #fff; /* Couleur de fond de la boîte */
+    border-radius: 8px; /* Arrondir les coins de la boîte */
+    box-shadow: 0 0 10px rgba(5, 5, 5, 0.535); /* Ajouter une ombre à la boîte */
+  }
+  

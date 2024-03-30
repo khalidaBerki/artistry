@@ -1,0 +1,118 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    color: #007bff;
+  }
+  
+  .intro-container {
+    margin-top: 60px;
+  }
+  
+  .search-container,
+  .artist-container {
+    display: flex; /* Afficher les conteneurs sur la même ligne */
+    align-items: center; /* Aligner les éléments verticalement */
+    margin-top: 10%; /* Ajouter un espace au-dessus des conteneurs */
+  }
+  
+  .search-container label,
+  .artist-container label {
+    margin-right: 10px;
+  }
+  
+  .search-container input[type="text"],
+  .artist-container select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .artwork-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:2%;
+  }
+  
+  .artwork-box {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Arrondir les coins */
+    transition: box-shadow 0.3s ease; /* Ajouter une transition pour une animation douce */
+  
+    /* Ombre par défaut */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre grise */
+  
+    /* Ombre jaune au survol */
+  }
+  .artwork-box:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.5); /* Ombre jaune lors du survol */
+  }
+  
+  
+  .artwork-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+  }
+  
+  .artwork-link:hover {
+    transform: translateX(-10px);
+  }
+  
+  .artwork-details {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .artwork-details h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .artwork-details p {
+    margin: 0;
+  }
+  

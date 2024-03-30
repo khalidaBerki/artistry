@@ -1,0 +1,27 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+  }
+  
+  .content-container {
+    display: flex;
+  }
+  
+  .intro-container {
+    width: 75%;
+  }
+  
+  .image-container {
+    
+    width: 40%; /* Ajustez la largeur selon vos besoins */
+  }
+  
+  .image-container img {
+    margin-top:20%;
+    width: 80%; /* Assurez-vous que l'image occupe toute la largeur de son conteneur */
+  }
+  
